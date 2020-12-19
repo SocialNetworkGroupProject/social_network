@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.login.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/common_google_signin_btn_text_dark_pressed">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="237dp"
+        android:layout_height="256dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/logo_desc"
+        android:src="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/wellcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginTop="5dp"
+        android:text="@string/logo_desc" />
+
+    <TextView
+        android:id="@+id/signinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginTop="5dp"
+        android:text="@string/signin_suggest" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/account"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:hint="@string/AccountHint"
+            style="@style/Widget.Design.TextInputLayout"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:hint="@string/PasswordHint"
+            style="@style/Widget.Design.TextInputLayout"/>
+
+        <Button
+            android:id="@+id/signinEmailButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_button"
+            android:onClick="onClick"
+            android:text="@string/signin" />
+
+        <TextView
+            android:id="@+id/registerSuggestText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="italic"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/register_suggest" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_button"
+            android:onClick="onClick"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/googleSigninSuggestText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="italic"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/google_suggest" />
+
+        <Button
+            android:id="@+id/googleSigninButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_button"
+            android:drawableEnd="@drawable/ic_google"
+            android:drawableRight="@drawable/ic_google"
+            android:onClick="onClick"
+            android:text="@string/signin" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+Task manager 
+	I.init Github social network repo
+	II.config general firebase setting
